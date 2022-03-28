@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 368px; height: 796px;
+    background-color: #FDE7E2;
+    display: grid;
+    grid-template-columns: 60px 248px 60px;
+    grid-template-rows: 190px 178px 60px 178px 190px;
+    border-radius: 20px;
+}
+
+.makeVase {
+    grid-column: 2/ 3; grid-row: 2/ 3;
+    width: 248px; height: 178px;
+    background-color: #C9986B;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.writeLetter {
+    grid-column: 2/ 3; grid-row: 4/ 5;
+    width: 248px; height: 178px;
+    background-color: #C9986B;
+    margin-top: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+span {
+    color: #ffffff;
+}
+
+.hamburger {
+    grid-column: 3/ 4; grid-row: 1/ 2;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.high {
+    background-color: #DD9292;
+    width: 39.24px; height: 6.24px;
+}
+
+.mid {
+    background-color: #DD9292;
+    width: 39.24px; height: 6.24px;
+}
+
+.low {
+    background-color: #DD9292;
+    width: 39.24px; height: 6.24px;
+}

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "pug": "^3.0.2"
+  },
+  "script": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  }
+}

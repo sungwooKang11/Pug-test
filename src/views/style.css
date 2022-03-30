@@ -1,6 +1,6 @@
 .color {
     color: #E5E5E5, #FDE7E2, #EDC6C4, #E2B7B4, #DD9292, #F5EBE2, #FFE164, #A8CE90, #87B17F, 
-    #C9986B, #5E452A;
+    #C9986B, #5E452A, #fff9f4;
 }
 
 body {
@@ -13,45 +13,13 @@ body {
     width: 368px; height: 796px;
     background-color: #FDE7E2;
     display: grid;
-    grid-template-rows: 70px 20px 686px 20px;
+    grid-template-columns: 70px 228px 70px;
+    grid-template-rows: 70px 626px 100px;
     justify-items: center;
-    align-items: center ;
     border-radius: 20px;
 }
 
-.header {
-    width: 368px; height: 70px;
-    background-color: #fff9f4;
-    display: grid;
-    grid-template-columns: 294px 74px;
-    justify-items: center;
-    align-items: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.title {
-    margin-left: 80px;
-    color: #DD9292;
-}
-
-.done {
-    width: 55px; height: 35px;
-    background-color: #DD9292;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-}
-
-.letterCon {
-    width: 308px; height: 656px;
-    background-color: #fff9f4;
-    grid-row: 3/ 4;
-    border-radius: 20px;
-}
-
-/* .hamburger {
+.hamburger {
     grid-column: 3/ 4; grid-row: 1/ 2;
     height: 36px;
     display: flex;
@@ -64,14 +32,44 @@ body {
 .high {
     background-color: #DD9292;
     width: 39.24px; height: 6.24px;
+    border-radius: 5px;
 }
 
 .mid {
     background-color: #DD9292;
     width: 39.24px; height: 6.24px;
+    border-radius: 5px;
 }
 
 .low {
     background-color: #DD9292;
     width: 39.24px; height: 6.24px;
-} */
+    border-radius: 5px;
+}
+
+.save {
+    width: 118px; height: 50px;
+    background-color: #DD9292;
+    grid-column: 2/ 3;
+    grid-row: 3/ 4;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+}
+
+.vaseCon {
+    width: 228px; height: 600px;
+    background-color: #fff9f4;
+    grid-column: 2/ 3;
+    grid-row: 2/ 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.who {
+    color: #5E452A;
+    margin-bottom: 20px;
+}

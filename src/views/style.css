@@ -1,40 +1,74 @@
+.color {
+    color: #E5E5E5, #FDE7E2, #EDC6C4, #E2B7B4, #DD9292, #F5EBE2, #FFE164, #A8CE90, #87B17F, 
+    #C9986B, #5E452A;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
+.background {
     width: 368px; height: 796px;
     background-color: #FDE7E2;
-    display: grid;
-    grid-template-columns: 60px 248px 60px;
-    grid-template-rows: 190px 178px 60px 178px 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
 }
 
-.makeVase {
-    grid-column: 2/ 3; grid-row: 2/ 3;
-    width: 248px; height: 178px;
-    background-color: #C9986B;
-    text-align: center;
-    border-radius: 10px;
+.modal {
+    width: 298px; height: 325px;
+    background-color: #fff9f4;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.writeLetter {
-    grid-column: 2/ 3; grid-row: 4/ 5;
-    width: 248px; height: 178px;
-    background-color: #C9986B;
-    margin-top: 60px;
-    text-align: center;
-    border-radius: 10px;
+.pinkSpan1 {
+    color: #DD9292;
+    font-size: 15px;
+    margin-top: 40px;
 }
 
-span {
+.pinkSpan2 {
+    color: #DD9292;
+    font-size: 15px;
+}
+
+.inputName {
+    color: #5E452A;
+    margin-top: 20px;
+}
+
+.code {
+    width: 270px; height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E5E5E5;
+}
+
+.code:focus {
+    outline: none;
+}
+
+.ok {
+    width: 61px; height: 38px;
+    background-color: #DD9292;
     color: #ffffff;
+    font-size: 15px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
 }
 
-.hamburger {
+.ok:hover {
+    background-color: #E2B7B4;
+}
+
+/* .hamburger {
     grid-column: 3/ 4; grid-row: 1/ 2;
     height: 36px;
     display: flex;
@@ -57,4 +91,4 @@ span {
 .low {
     background-color: #DD9292;
     width: 39.24px; height: 6.24px;
-}
+} */

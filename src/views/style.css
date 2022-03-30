@@ -12,61 +12,43 @@ body {
 .background {
     width: 368px; height: 796px;
     background-color: #FDE7E2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 70px 20px 686px 20px;
+    justify-items: center;
+    align-items: center ;
     border-radius: 20px;
 }
 
-.modal {
-    width: 298px; height: 325px;
+.header {
+    width: 368px; height: 70px;
     background-color: #fff9f4;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 294px 74px;
+    justify-items: center;
     align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.pinkSpan1 {
+.title {
+    margin-left: 80px;
     color: #DD9292;
-    font-size: 15px;
-    margin-top: 40px;
 }
 
-.pinkSpan2 {
-    color: #DD9292;
-    font-size: 15px;
-}
-
-.inputName {
-    color: #5E452A;
-    margin-top: 20px;
-}
-
-.code {
-    width: 270px; height: 50px;
-    border: none;
-    border-radius: 10px;
-    background-color: #E5E5E5;
-    font-size: 25px;
-}
-
-.code:focus {
-    outline: none;
-}
-
-.ok {
-    width: 61px; height: 38px;
+.done {
+    width: 55px; height: 35px;
     background-color: #DD9292;
     color: #ffffff;
-    font-size: 15px;
-    margin-top: 40px;
     border: none;
     border-radius: 10px;
+    font-size: 15px;
 }
 
-.ok:hover {
-    background-color: #e0857f;
+.letterCon {
+    width: 308px; height: 656px;
+    background-color: #fff9f4;
+    grid-row: 3/ 4;
+    border-radius: 20px;
 }
 
 /* .hamburger {

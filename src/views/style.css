@@ -12,14 +12,47 @@ body {
 .background {
     width: 368px; height: 796px;
     background-color: #FDE7E2;
-    display: grid;
-    grid-template-columns: 70px 228px 70px;
-    grid-template-rows: 70px 626px 100px;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
 }
 
-.hamburger {
+.envelop {
+    width: 301px; height: 178px;
+    background-color: #fff9f4;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px rgba(237, 198, 196, 0.8);
+    display: flex;
+    justify-content: center;
+}
+
+
+.line1 {
+    width: 150px; height: 5px;
+    background-color: #5E452A;
+    margin-top: 50px;
+    transform: rotate(30deg) translateX(13px);
+    border-radius: 5px;   
+}
+
+.line2 {
+    width: 150px; height: 5px;
+    background-color: #5E452A;
+    margin-top: 50px;
+    transform: rotate(-30deg) translateX(-13px);
+    border-radius: 5px;
+}
+
+.to {
+    color: #5E452A;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* .hamburger {
     grid-column: 3/ 4; grid-row: 1/ 2;
     height: 36px;
     display: flex;
@@ -44,32 +77,6 @@ body {
 .low {
     background-color: #DD9292;
     width: 39.24px; height: 6.24px;
-    border-radius: 5px;
-}
+    border-radius: 5px; 
+}*/
 
-.save {
-    width: 118px; height: 50px;
-    background-color: #DD9292;
-    grid-column: 2/ 3;
-    grid-row: 3/ 4;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 15px;
-    border: none;
-}
-
-.vaseCon {
-    width: 228px; height: 600px;
-    background-color: #fff9f4;
-    grid-column: 2/ 3;
-    grid-row: 2/ 3;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.who {
-    color: #5E452A;
-    margin-bottom: 20px;
-}

@@ -29,7 +29,7 @@ body {
 }
 
 
-.line1 {
+/* .line1 {
     width: 150px; height: 5px;
     background-color: #5E452A;
     margin-top: 50px;
@@ -43,7 +43,7 @@ body {
     margin-top: 50px;
     transform: rotate(-30deg) translateX(-13px);
     border-radius: 5px;
-}
+} */
 
 .to {
     color: #5E452A;

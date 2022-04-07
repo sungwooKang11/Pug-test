@@ -38,7 +38,7 @@ body {
     align-items: center;
     margin-top: 20px;
     transition: 0.7s;
-    z-index: 2;
+    z-index: 3;
 }
 
 /* .hamburgerBtn.active {

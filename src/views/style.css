@@ -35,13 +35,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
     transition: 0.7s;
+    z-index: 2;
 }
 
-.hamburgerBtn.active {
+/* .hamburgerBtn.active {
     transform: translateX(-300px);
-}
+} */
 
 .high {
     background-color: #DD9292;
@@ -51,7 +53,8 @@ body {
 }
 
 .high.active {
-    transform: translateY(15px) rotate(45deg);
+    transform: translateX(12px) translateY(9px) rotate(45deg);
+    width: 20px;
 }
 
 .mid {
@@ -62,8 +65,8 @@ body {
 }
 
 .mid.active {
-    transform: translateX(100px);
-
+    width: 30px;
+    transform: rotate(360deg);
 }
 
 .low {
@@ -74,7 +77,8 @@ body {
 }
 
 .low.active {
-    transform: translateY(-15px) rotate(-45deg);
+    transform: translateX(12px) translateY(-9px) rotate(-45deg);
+    width: 20px;
 }
 
 .menu {
@@ -84,8 +88,10 @@ body {
     grid-row: 1/ 4;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     display: grid;
-    grid-template-rows: 90px repeat(10, 70px);
+    grid-template-rows: 80px repeat(9, 70px);
     align-items: center;
     transition: 0.7s;
 }
@@ -94,3 +100,32 @@ body {
     transform: translateX(-300px);
 }
 
+.mHeader {
+    width: 300px; height: 80px;
+    grid-row: 1/ 2;
+    border-bottom: 1px solid #c4c4c4aa;
+
+}
+
+.mFooter {
+    width: 300px; height: 80px;
+    grid-row: 11;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #c4c4c4aa;
+}
+
+.infoBtn {
+    width: 28px; height: 28px;
+    background-color: #5E452A;
+    border-radius: 14px;
+}
+
+.whoBtn {
+    width: 28px; height: 28px;
+    background-color: #5E452A;
+    border-radius: 14px;
+    margin-right: 20px;
+}

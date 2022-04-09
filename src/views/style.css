@@ -82,7 +82,9 @@ body {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     display: grid;
+    grid-template-columns: 300px;
     grid-template-rows: 80px repeat(9, 70px);
+    grid-auto-flow: column;
     align-items: center;
     transition: 0.7s;
 }
@@ -105,6 +107,52 @@ body {
     align-items: center;
     gap: 10px;
     border-top: 1px solid #c4c4c4aa;
+}
+
+.content {
+    width: 300px; height: 70px; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile {
+    width: 50px; height: 50px;
+    background-color: #DD9292;
+    border-radius: 30px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.head {
+    width: 15px; height: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.body {
+    width: 30px; height: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.name {
+    color: #5E452A;
+    font-weight: 600;
+}
+
+.loginBtn {
+    width: 63px; height: 25px;
+    background-color: #C9986B;
+    font-size: 10px;
+    color: #5E452A;
+    margin-left: 60px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
 }
 
 .infoBtn {

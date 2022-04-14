@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .background {
@@ -19,57 +20,70 @@ body {
     border-radius: 20px;
 }
 
-.envelop {
+.opener {   
+    width: 0; height: 0;
+    border: 150px solid transparent;
+    border-top: 0;
+    border-bottom: 80px solid salmon;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.envBack {
+    width: 301px; height: 170px;
+    background-color: greenyellow;
+    display: flex;
+    align-items: flex-end;
+    z-index: 3;
+}
+
+.letter {
+    position: absolute;
+    width: 270px; height: 150px;
+    background-color: #EDC6C4;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.envelope {
     width: 301px; height: 178px;
     background-color: #fff9f4;
     border-radius: 20px;
     box-shadow: 2px 3px 4px rgba(237, 198, 196, 0.8);
     display: flex;
     justify-content: center;
-    z-index: 0;
     overflow: hidden;
+    z-index: 0;
 }
 
-.top {
-    width: 0; height: 0;
-    border: 150px solid transparent;
-    border-bottom: 0;
-    border-top: 100px solid #C9986B;
+.hidden1 {
+    content: "";
+    position: absolute;
+    width: 180px; height: 95px;
+    background-color: #FDE7E2;
+    transform: rotate(20deg);
+    margin-left: 0px;
+    margin-bottom: 90px;
+    top: 330px;
     border-radius: 5px;
     z-index: 2;
-    position: relative;
+    /* opacity: 0.5; */
 }
 
-.left {
-    width: 0; height: 0;
-    border: 75px solid transparent;
-    border-right: 0;
-    border-left: 150px solid #87B17F;
-    z-index: 1;
+.hidden2 {
+    content: "";
     position: absolute;
-    margin-left: -150px;
-    margin-top: 15px;
-}
-
-.right {
-    width: 0; height: 0;
-    border: 75px solid transparent;
-    border-left: 0;
-    border-right: 150px solid #87B17F;
-    z-index: 1;
-    position: absolute;
-    margin-left: 150px;
-    margin-top: 15px;
-}
-
-.bottom {
-    width: 0; height: 0;
-    border: 150px solid transparent;
-    border-top: 0;
-    border-bottom: 95px solid #DD9292;
+    width: 180px; height: 95px;
+    background-color: #FDE7E2;
+    transform: rotate(-20deg);
+    margin-left: 130px;
+    margin-bottom: 90px;
+    top: 330px;
     border-radius: 5px;
-    position: absolute;
-    margin-top: 83px;
+    z-index: 2;
+    /* opacity: 0.5; */
 }
 
 /* .to {

@@ -21,19 +21,17 @@ body {
 }
 
 .opener {   
-    position: relative;
     width: 0; height: 0;
     border-style: solid;
-    border-width: 100px 140px 0 140px;
-    border-color: #A8CE90 transparent transparent transparent;
+    border-width: 0 145px 95px 145px;
+    border-color:  transparent transparent #A8CE90 transparent;
     z-index: 1;
     transition: 0.5s;
-    left: 310px;
 }
 
 .opener.active {
-    transform: rotateX(-180deg);
-    transform-origin: top;
+    transform: rotateX(180deg);
+    transform-origin: bottom;
 }
 
 /* .envBack {
@@ -70,10 +68,10 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 100px 0px 100px 160px;
+    border-width: 100px 0px 100px 150px;
     border-color: transparent transparent transparent #ec7411;
-    left: 10px;
-    top: 0px;
+    left: 150px;
+    top: -5px;
 }
 
 .right {
@@ -81,10 +79,10 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 100px 160px 100px 0px;
+    border-width: 100px 150px 100px 0px;
     border-color: transparent #ec7411 transparent transparent;
-    left: 10px;
-    top: 0px;
+    left: 150px;
+    top: -5px;
 }
 
 .bottom {
@@ -95,7 +93,7 @@ body {
     border-width: 0 150px 100px 150px;
     border-color: transparent transparent #fff9f4 transparent;
     top: 90px;
-    right: 300px;
+    right: 150px;
 }
 
 /* .hidden1 {

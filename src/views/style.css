@@ -21,23 +21,30 @@ body {
 }
 
 .opener {   
+    position: relative;
     width: 0; height: 0;
-    border: 150px solid transparent;
-    border-top: 0;
-    border-bottom: 80px solid salmon;
-    border-radius: 10px;
-    z-index: -1;
+    border-style: solid;
+    border-width: 100px 140px 0 140px;
+    border-color: #A8CE90 transparent transparent transparent;
+    z-index: 1;
+    transition: 0.5s;
+    left: 310px;
 }
 
-.envBack {
+.opener.active {
+    transform: rotateX(-180deg);
+    transform-origin: top;
+}
+
+/* .envBack {
     width: 301px; height: 170px;
     background-color: greenyellow;
     display: flex;
     align-items: flex-end;
     z-index: 3;
-}
+} */
 
-.letter {
+/* .letter {
     position: absolute;
     width: 270px; height: 150px;
     background-color: #EDC6C4;
@@ -45,11 +52,11 @@ body {
     margin-bottom: 15px;
     border-radius: 10px;
     z-index: 1;
-}
+} */
 
 .envelope {
     width: 301px; height: 178px;
-    background-color: #fff9f4;
+    background-color: #E5E5E5;
     border-radius: 20px;
     box-shadow: 2px 3px 4px rgba(237, 198, 196, 0.8);
     display: flex;
@@ -58,7 +65,40 @@ body {
     z-index: 0;
 }
 
-.hidden1 {
+.left {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 0px 100px 160px;
+    border-color: transparent transparent transparent #ec7411;
+    left: 10px;
+    top: 0px;
+}
+
+.right {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 160px 100px 0px;
+    border-color: transparent #ec7411 transparent transparent;
+    left: 10px;
+    top: 0px;
+}
+
+.bottom {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 150px 100px 150px;
+    border-color: transparent transparent #fff9f4 transparent;
+    top: 90px;
+    right: 300px;
+}
+
+/* .hidden1 {
     content: "";
     position: absolute;
     width: 180px; height: 95px;
@@ -69,7 +109,7 @@ body {
     top: 330px;
     border-radius: 5px;
     z-index: 2;
-    /* opacity: 0.5; */
+    display: none;
 }
 
 .hidden2 {
@@ -83,8 +123,8 @@ body {
     top: 330px;
     border-radius: 5px;
     z-index: 2;
-    /* opacity: 0.5; */
-}
+    display: none;
+} */
 
 /* .to {
     color: #5E452A;

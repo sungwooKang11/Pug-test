@@ -7,13 +7,13 @@ const menu =document.querySelector(".menu");
 const backBtn = document.querySelector(".backBtn");
 
 
-hamburger.onclick = () => {
+hamburger.onclick= () => {
     hamburger.classList.toggle("active");
     menu.classList.toggle("active");
     high.classList.toggle("active");
     mid.classList.toggle("active");
     low.classList.toggle("active");
-}
+}       
 
 // reset = () => {
 //     hamburger.classList.remove("active");

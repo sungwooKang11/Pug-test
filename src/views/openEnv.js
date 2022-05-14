@@ -3,8 +3,8 @@ const envelope = document.querySelector(".envelope");
 const letter = document.querySelector(".letter");
 
 const openEnv = () => {
-    opener.classList.toggle("active");
-    letter.classList.toggle("popup");
+    opener.classList.add("active");
+    letter.classList.add("popup");
 }
 
 const letterPage = document.querySelector(".letterPage");

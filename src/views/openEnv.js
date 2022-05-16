@@ -2,20 +2,21 @@ const opener = document.querySelector(".opener");
 const envelope = document.querySelector(".envelope");
 const letter = document.querySelector(".letter");
 
-const openEnv = () => {
+const openEnv = () => {  //봉투 열기
     opener.classList.add("active");
     letter.classList.add("popup");
 }
+
 
 const letterPage = document.querySelector(".letterPage");
 const backBtn = document.querySelector(".backBtn");
 const clicker = document.querySelector(".clicker");
 
-const openModal = () => {
+const openModal = () => {   //편지 세부창 열기
     letterPage.classList.remove("hidden");
 }
 
-const removeModal = () => {
+const removeModal = () => {   //편지 세부창 닫기
     letterPage.classList.add("hidden");
 }
 

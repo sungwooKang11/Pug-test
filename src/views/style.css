@@ -15,18 +15,18 @@ body {
     background-color: #FDE7E2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     border-radius: 20px;
 }
 
 .letterdiv {
     width: 368px; height: 796px;
-    background-color: #DD9292;
+    background-color: #E2B7B4;
     display: grid;
-    grid-template-columns: 60px 248px 60px;
+    grid-template-columns: 50px 268px 50px;
     grid-template-rows: 60px 676px 60px;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     border-radius: 20px;
 }
@@ -40,16 +40,72 @@ body {
     grid-row: 1/ 2;
 }
 
-.line1 {
-    width: 45px; height: 8px;
+.xline1 {
+    width: 40px; height: 5px;
     background-color: #F5EBE2;
     border-radius: 10px;
-    transform: translateX(5px) translateY(12px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
 }
 
-.line2 {
-    width: 45px; height: 8px;
+.xline2 {
+    width: 40px; height: 5px;
     background-color: #F5EBE2;
     border-radius: 10px;
-    transform: translateX(5px) translateY(-12px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
 }
+
+.leftBtn {
+    width: 30px; height: 50px;
+    grid-column: 1/ 2;
+    grid-row: 2/ 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftline1 {
+    width: 30px; height: 8px;
+    background-color: #DD9292;
+    border-radius: 15px;
+    transform: rotate(-45deg) translateX(4px) translateY(-3px);
+}
+
+.leftline2 {
+    width: 30px; height: 8px;
+    background-color: #DD9292;
+    border-radius: 15px;
+    transform: rotate(45deg) translateX(4px) translateY(3px);
+
+}
+
+.rightBtn {
+    width: 30px; height: 50px;
+    grid-column: 3/ 4;
+    grid-row: 2/ 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightline1 {
+    width: 30px; height: 8px;
+    background-color: #DD9292;
+    border-radius: 15px;
+    transform: rotate(45deg) translateX(-4px) translateY(-3px);
+}
+
+.rightline2 {
+    width: 30px; height: 8px;
+    background-color: #DD9292;
+    border-radius: 15px;
+    transform: rotate(-45deg) translateX(-4px) translateY(3px);
+}
+
+.letterbox {
+    width: 267px; height: 267px;
+    background-color: #fff9f4;
+    grid-column: 2/ 3;
+    grid-row: 2/ 3;
+    border-radius: 20px;
+}
+

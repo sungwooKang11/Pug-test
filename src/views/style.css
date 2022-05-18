@@ -121,6 +121,7 @@ textarea:focus {
 .note {
     width: 240px; height: 260px;
     background-color: #fff9f4;
+    font-family: 'Asap', sans-serif;
     border: none;
     resize: none;
 }

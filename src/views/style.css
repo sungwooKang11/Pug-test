@@ -109,8 +109,35 @@ body {
     border-radius: 20px;
     border: none;
     resize: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 textarea:focus {
     outline: none;
+}
+
+.note {
+    width: 240px; height: 260px;
+    background-color: #fff9f4;
+    border: none;
+    resize: none;
+}
+
+.note::-webkit-scrollbar {
+    width: 10px;
+}
+
+.note::-webkit-scrollbar-thumb {
+    background-color: #DD9292;
+    border-radius: 5px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.note::-webkit-scrollbar-track {
+    width: 12px;
+    background-color: #E2B7B4;
+    border-radius: 5px;
 }

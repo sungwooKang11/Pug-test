@@ -107,9 +107,11 @@ textarea:focus {
     outline: none;
 }
 .note {
-    width: 240px; height: 260px;
+    width: 250px; height: 260px;
     background-color: #fff9f4;
+    margin-left: 5px;
     font-family: 'Asap', sans-serif;
+    border-radius: 7px;
     border: none;
     resize: none;
 }
@@ -122,8 +124,8 @@ textarea:focus {
     background-clip: padding-box;
     border: 2px solid transparent;
 }
-.note::-webkit-scrollbar-track {
+/* .note::-webkit-scrollbar-track {
     width: 12px;
     background-color: #E2B7B4;
     border-radius: 5px;
-}
+} */

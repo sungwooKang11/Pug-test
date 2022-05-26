@@ -7,76 +7,65 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
 }
 
 .background {
     width: 368px; height: 796px;
     background-color: #FDE7E2;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
 }
 
 .modal {
-    width: 295px; height: 344px;
+    width: 298px; height: 325px;
     background-color: #fff9f4;
-    border-radius: 20px;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: #c3c3c3 3px 3px 5px;
-}
-
-.yourFlower, .suggest {
-   font-family: 'Asap', sans-serif;
-}
-
-.suggest {
-    margin-bottom: 25px;
-}
-
-.flowerTab {
-    width: 110px; height: 110px;
-    background-color: #E5E5E5;
-    border-radius: 55px;
-}
-
-.btn {
-    width: 92px; height: 30px;
-    background-color: #DD9292;
-    border-radius: 10px;
-    margin-top: 30px;
-    font-size: 15px;
-    color: #fff;
-    text-align: center;
-}
-
-.pageConvert {
-    width: 90px; height: 20px;
+    border-radius: 30px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    background-image: url("src/views/img/modalDecoFlower0002.jpg");
+}
+
+.pinkSpan1 {
+    color: #DD9292;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.pinkSpan2 {
+    color: #DD9292;
+    font-size: 15px;
+}
+
+.inputName {
+    color: #5E452A;
     margin-top: 20px;
 }
 
-.one {
-    width: 10px; height: 10px;
-    background-color: #E2B7B4;
-    border-radius: 5px;
+.code {
+    width: 270px; height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E5E5E5;
+    font-size: 25px;
 }
 
-.two {
-    width: 10px; height: 10px;
-    background-color: #E2B7B4;
-    border-radius: 5px;
+.code:focus {
+    outline: none;
 }
 
-.three {
-    width: 10px; height: 10px;
+.ok {
+    width: 61px; height: 38px;
     background-color: #DD9292;
-    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.ok:hover {
+    background-color: #e0857f;
 }

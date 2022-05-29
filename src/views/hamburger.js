@@ -8,6 +8,7 @@ const backBtn = document.querySelector(".backBtn");
 
 
 hamburger.onclick= () => {
+    background.classList.toggle("active");
     hamburger.classList.toggle("active");
     menu.classList.toggle("active");
     high.classList.toggle("active");

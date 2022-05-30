@@ -6,141 +6,186 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #87B17F;
 }
 .background {
     width: 368px; height: 796px;
     background-color: #FDE7E2;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    border-radius: 20px;
-}
-
-.letterdiv {
-    width: 368px; height: 796px;
-    background-color: #E2B7B4;
     display: grid;
-    grid-template-columns: 50px 268px 50px;
-    grid-template-rows: 60px 676px 60px;
+    grid-template-columns: 70px 228px 70px;
+    grid-template-rows: 70px 626px 100px;
     justify-items: center;
-    align-items: center;
     border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
-.xbtn {
-    width: 50px; height: 50px;
+.background.active {
+    background-color: #E2B7B4;
+}
+
+.hamburgerBtn {
+    grid-column: 3/ 4; grid-row: 1/ 2;
+    height: 36px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    grid-column: 3/ 4;
-    grid-row: 1/ 2;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    transition: 0.5s;
+    z-index: 3;
+    cursor: pointer;
 }
-
-.xline1 {
-    width: 40px; height: 5px;
-    background-color: #F5EBE2;
-    border-radius: 10px;
-    transform: translateY(13px) rotate(45deg);
-}
-
-.xline2 {
-    width: 40px; height: 5px;
-    background-color: #F5EBE2;
-    border-radius: 10px;
-    transform: translateY(-13px) rotate(-45deg);
-}
-
-.leftBtn {
-    width: 30px; height: 50px;
-    grid-column: 1/ 2;
-    grid-row: 2/ 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.leftline1 {
-    width: 30px; height: 8px;
+.high {
     background-color: #DD9292;
+    width: 39.24px; height: 6.24px;
     border-radius: 15px;
-    transform: rotate(-45deg) translateX(4px) translateY(-3px);
+    transition: 0.7s;
 }
-
-.leftline2 {
-    width: 30px; height: 8px;
+.high.active {
+    transform: translateX(12px) translateY(9px) rotate(45deg);
+    width: 20px;
+}
+.mid {
     background-color: #DD9292;
+    width: 39.24px; height: 6.24px;
     border-radius: 15px;
-    transform: rotate(45deg) translateX(4px) translateY(3px);
+    transition: 0.7s;
 }
-
-.rightBtn {
-    width: 30px; height: 50px;
-    grid-column: 3/ 4;
-    grid-row: 2/ 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.mid.active {
+    width: 30px;
+    transform: rotate(180deg);
 }
-
-.rightline1 {
-    width: 30px; height: 8px;
+.low {
     background-color: #DD9292;
-    border-radius: 15px;
-    transform: rotate(45deg) translateX(-4px) translateY(-3px);
+    width: 39.24px; height: 6.24px;
+    border-radius: 15px; 
+    transition: 0.7s;
 }
-
-.rightline2 {
-    width: 30px; height: 8px;
+.low.active {
+    transform: translateX(12px) translateY(-9px) rotate(-45deg);
+    width: 20px;
+}
+.save {
+    width: 118px; height: 50px;
     background-color: #DD9292;
+    grid-column: 2/ 3;
+    grid-row: 3/ 4;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
     border-radius: 15px;
-    transform: rotate(-45deg) translateX(-4px) translateY(3px);
+    border: none;
+	box-shadow:2px 2px 2px #c4c4c4;
+    cursor: pointer;
 }
-
-.letterbox {
-    width: 267px; height: 280px;
-    background-color: #fff9f4;
+.vaseCon {
+    width: 228px; height: 600px;
     grid-column: 2/ 3;
     grid-row: 2/ 3;
-    border-radius: 20px;
-    border: none;
-    resize: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+}
+.who {
+    color: #5E452A;
+    margin-bottom: 20px;
+}
+.menu {
+    width: 300px; height: 796px;
+    background-color: #fff9f4;
+    grid-column: 4;
+    grid-row: 1/ 4;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 80px repeat(9, 70px);
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    transition: 0.7s;
+}
+
+.menu.active {
+    transform: translateX(-300px);
+    box-shadow: -3px -1px #dfaeac;
+}
+
+.mHeader {
+    width: 280px; height: 80px;
+    grid-row: 1/ 2;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+.mFooter {
+    width: 280px; height: 80px;
+    grid-row: 11;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgb(229, 229, 229);
+}
+.content {
+    width: 300px; height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile {
+    width: 50px; height: 50px;
+    background-color: #DD9292;
+    border-radius: 30px;
+    margin-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
 }
-
-.count {
-    margin-top: 4px;
+.head {
+    width: 15px; height: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
-
-textarea:focus {
-    outline: none;
+.body {
+    width: 30px; height: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
-
-.note {
-    width: 239px; height: 260px;
-    background-color: #fff9f4;
-    border: none;
-    resize: none;
+.name {
+    color: #5E452A;
+    font-weight: 600;
+}
+.loginBtn {
+    width: 63px; height: 25px;
+    background-color: #C9986B;
+    font-size: 10px;
+    color: #5E452A;
+    margin-left: 60px;
     padding: 0;
-}
-
-.note::-webkit-scrollbar {
-    width: 10px;
-}
-
-.note::-webkit-scrollbar-thumb {
-    background-color: #c4c4c4;
+    border: none;
     border-radius: 5px;
-    background-clip: padding-box;
-    border: 2px solid transparent;
 }
-
-/* .note::-webkit-scrollbar-track {
-    width: 12px;
-    background-color: #E2B7B4;
-    border-radius: 5px;
-}  */
+.infoBtn {
+    width: 28px; height: 28px;
+    background-color: #5E452A;
+    background-image: url("/src/views/img/list_icon.png");
+    border-radius: 14px;
+    overflow: hidden;
+}
+#listImg {
+    width: 28px; height: 28px;
+}
+.whoBtn {
+    width: 28px; height: 28px;
+    background-color: #5E452A;
+    border-radius: 14px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+#questionImg {
+    width: 28px; height: 28px;
+}

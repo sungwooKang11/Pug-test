@@ -1,16 +1,24 @@
 extends base
 block content
     .background
-        .letterdiv 
-            .xbtn
-                .xline1 
-                .xline2
-            .leftBtn
-                .leftline1 
-                .leftline2
-            .letterbox
-                
-                textarea.note
-            .rightBtn
-                .rightline1 
-                .rightline2
+        .hamburgerBtn  
+            .high 
+            .mid 
+            .low
+        .vaseCon 
+            img(src="./view/img/vase.jpg")
+            span.who 대현 님의 꽃병
+        button.save 사진저장!
+        .menu 
+            header.mHeader
+            .content 
+                .profile
+                    .head
+                    .body
+                span.name 무궁화
+                button.loginBtn 로그인하기
+            footer.mFooter
+                .infoBtn
+                    img(id="listImg" src="/src/views/img/list_icon.png", alt="")
+                .whoBtn
+                    img(id="questionImg" src="/src/views/img/question_icon.png", alt="")

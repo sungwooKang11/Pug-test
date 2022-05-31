@@ -172,7 +172,6 @@ body {
 .infoBtn {
     width: 28px; height: 28px;
     background-color: #5E452A;
-    background-image: url("/src/views/img/list_icon.png");
     border-radius: 14px;
     overflow: hidden;
 }

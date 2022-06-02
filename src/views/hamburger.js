@@ -1,10 +1,10 @@
-const background = document.querySelector(".background");
-const hamburger = document.querySelector(".hamburgerBtn");
-const high =document.querySelector(".high");
-const mid =document.querySelector(".mid");
-const low =document.querySelector(".low");
-const menu =document.querySelector(".menu");
-const backBtn = document.querySelector(".backBtn");
+const background = document.querySelector(".background04");
+const hamburger = document.querySelector(".hamburgerBtn04");
+const high =document.querySelector(".high04");
+const mid =document.querySelector(".mid04");
+const low =document.querySelector(".low04");
+const menu =document.querySelector(".menu04");
+const backBtn = document.querySelector(".backBtn04");
 
 
 hamburger.onclick= () => {

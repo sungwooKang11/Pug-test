@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 
-.background061 {
+.background062 {
     width: 368px; height: 796px;
     background-color: #FDE7E2;
     display: flex;
@@ -20,7 +20,7 @@ body {
     border-radius: 20px;
 }
 
-.letterdiv061 {
+.letterdiv062 {
     width: 368px; height: 796px;
     background-color: #E2B7B4;
     display: grid;
@@ -31,7 +31,7 @@ body {
     border-radius: 20px;
 }
 
-.xbtn061 {
+.xbtn062 {
     width: 50px; height: 50px;
     display: flex;
     flex-direction: column;
@@ -40,21 +40,21 @@ body {
     grid-row: 1/ 2;
 }
 
-.xline1061 {
+.xline1062 {
     width: 40px; height: 5px;
     background-color: #F5EBE2;
     border-radius: 10px;
     transform: translateY(13px) rotate(45deg);
 }
 
-.xline2061 {
+.xline2062 {
     width: 40px; height: 5px;
     background-color: #F5EBE2;
     border-radius: 10px;
     transform: translateY(-13px) rotate(-45deg);
 }
 
-.leftBtn061 {
+.leftBtn062 {
     width: 30px; height: 50px;
     grid-column: 1/ 2;
     grid-row: 2/ 3;
@@ -63,21 +63,21 @@ body {
     justify-content: center;
 }
 
-.leftline1061 {
+.leftline1062 {
     width: 30px; height: 8px;
     background-color: #DD9292;
     border-radius: 15px;
     transform: rotate(-45deg) translateX(4px) translateY(-3px);
 }
 
-.leftline2061 {
+.leftline2062 {
     width: 30px; height: 8px;
     background-color: #DD9292;
     border-radius: 15px;
     transform: rotate(45deg) translateX(4px) translateY(3px);
 }
 
-.rightBtn061 {
+.rightBtn062 {
     width: 30px; height: 50px;
     grid-column: 3/ 4;
     grid-row: 2/ 3;
@@ -86,21 +86,21 @@ body {
     justify-content: center;
 }
 
-.rightline1061 {
+.rightline1062 {
     width: 30px; height: 8px;
     background-color: #DD9292;
     border-radius: 15px;
     transform: rotate(45deg) translateX(-4px) translateY(-3px);
 }
 
-.rightline2061 {
+.rightline2062 {
     width: 30px; height: 8px;
     background-color: #DD9292;
     border-radius: 15px;
     transform: rotate(-45deg) translateX(-4px) translateY(3px);
 }
 
-.letterbox061 {
+.letterbox062 {
     width: 267px; height: 280px;
     background-color: #fff9f4;
     grid-column: 2/ 3;
@@ -114,7 +114,7 @@ body {
     align-items: center;
 }
 
-.count061 {
+.count062 {
     margin-top: 4px;
 }
 
@@ -122,21 +122,20 @@ textarea:focus {
     outline: none;
 }
 
-.note061 {
+.note062 {
     width: 239px; height: 260px;
     background-color: #fff9f4;
     border: none;
     resize: none;
     padding: 0;
+    background-attachment: local;
+    background-image:
+        linear-gradient(to right, #fff9f4 1px, transparent 1px),
+        linear-gradient(to left, #fff9f4 1px, transparent 1px),
+        repeating-linear-gradient(#fff9f4, #fff9f4 30px, #5E452A 30px, #5E452A 30px, #5E452A 31px);
+    line-height: 31px;
 }
 
- .note061::-webkit-scrollbar {
+.note062::-webkit-scrollbar {
     display: none;
 }
-
-/* .note061::-webkit-scrollbar-thumb {
-    background-color: #c4c4c4;
-    border-radius: 5px;
-    background-clip: padding-box;
-    border: 2px solid transparent;
-} */

@@ -10,5 +10,5 @@ const handleListening = () => {
 
 app.set("view engine", "pug");
 app.set("views", "src/views");
-app.use("/", (req, res) => res.render("home"));
+app.use("/", (req, res) => res.render("test"));
 app.listen(PORT, handleListening);

@@ -1,0 +1,51 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\DK\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\DK\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\DK\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\DK\AppData\Local\Microsoft\WindowsApps;C:\Users\DK\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DK\AppData\Roaming\npm;C:\Users\DK\AppData\Local\afreeca;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  17.6.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://sungwookang11.github.io/Pug-test/: Request failed "404 Not Found"
+      at ResponseError.ExtendableBuiltin (C:\Users\DK\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:696:66)
+      at new ResponseError (C:\Users\DK\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:802:124)
+      at Request.<anonymous> (C:\Users\DK\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67099:16)
+      at Request.emit (node:events:527:28)
+      at Request.module.exports.Request.onRequestResponse (C:\Users\DK\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141760:10)
+      at ClientRequest.emit (node:events:527:28)
+      at HTTPParser.parserOnIncomingClient (node:_http_client:618:27)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17)
+      at TLSSocket.socketOnData (node:_http_client:482:22)
+      at TLSSocket.emit (node:events:527:28)
+
+npm manifest: 
+  {
+    "dependencies": {
+      "express": "^4.17.3",
+      "pug": "^3.0.2"
+    },
+    "script": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node src/index.js",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    },
+    "devDependencies": {
+      "gh-pages": "^3.2.3",
+      "homepage": "https://sungwookang11.github.io/Pug-test/"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

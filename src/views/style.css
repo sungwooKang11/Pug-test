@@ -9,71 +9,65 @@ body {
     align-items: center;
 }
 
-.background01 {
+.background02 {
     width: 368px; height: 796px;
     background-color: #FDE7E2;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
 }
 
-.login01 {
-    width: 248px; height: 178px;
-    background-color: #C9986B;
-    border-radius: 20px;
-    margin-bottom: 70px;
+.modal02 {
+    width: 298px; height: 325px;
+    background-color: #fff9f4;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    box-shadow: 2px 2px #EDC6C4;
 }
 
-.loginwhite01 {
-    color: #fff;
-    font-size: 10px;
-    font-family: "TmoneyRoundWindRegular.ttf";
-    src: url("/src/views/fonts/TmoneyRoundWindRegular.ttf");
-    margin-bottom: 5px;
+.pinkSpan102 {
+    color: #DD9292;
+    font-size: 15px;
+    margin-top: 40px;
 }
 
-.loginbrown101 {
+.pinkSpan202 {
+    color: #DD9292;
+    font-size: 15px;
+}
+
+.inputName02 {
     color: #5E452A;
-    font-size: 30px;
-    font-weight: 700;
+    margin-top: 20px;
 }
 
-.loginbrown201 {
-    color: #5E452A;
-    font-size: 30px;
-    font-weight: 700;
+.code02 {
+    width: 270px; height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E5E5E5;
+    font-size: 25px;
+    text-align: center;
 }
 
-.start01 {
-    width: 248px; height: 178px;
-    background-color: #C9986B;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.code02:focus {
+    outline: none;
 }
 
-.startwhite01 {
-    color: #fff;
-    font-size: 10px;
-    margin-bottom: 5px;
+.okBtn02 {
+    width: 61px; height: 38px;
+    background-color: #DD9292;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px #c4c4c4;
 }
 
-.startbrown101 {
-    color: #5E452A;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.startbrown201 {
-    color: #5E452A;
-    font-size: 30px;
-    font-weight: 700;
+.okBtn02:hover {
+    background-color: #e0857f;
 }

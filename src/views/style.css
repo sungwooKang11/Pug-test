@@ -9,65 +9,44 @@ body {
     align-items: center;
 }
 
-.background02 {
+.background03 {
     width: 368px; height: 796px;
     background-color: #FDE7E2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 70px 20px 686px 20px;
+    justify-items: center;
+    align-items: center ;
     border-radius: 20px;
 }
 
-.modal02 {
-    width: 298px; height: 325px;
+.header03 {
+    width: 368px; height: 70px;
     background-color: #fff9f4;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 294px 74px;
+    justify-items: center;
     align-items: center;
-    box-shadow: 2px 2px #EDC6C4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.pinkSpan102 {
+.title03 {
+    margin-left: 80px;
     color: #DD9292;
-    font-size: 15px;
-    margin-top: 40px;
 }
 
-.pinkSpan202 {
-    color: #DD9292;
-    font-size: 15px;
-}
-
-.inputName02 {
-    color: #5E452A;
-    margin-top: 20px;
-}
-
-.code02 {
-    width: 270px; height: 50px;
-    border: none;
-    border-radius: 10px;
-    background-color: #E5E5E5;
-    font-size: 25px;
-    text-align: center;
-}
-
-.code02:focus {
-    outline: none;
-}
-
-.okBtn02 {
-    width: 61px; height: 38px;
+.doneBtn03 {
+    width: 55px; height: 35px;
     background-color: #DD9292;
     color: #ffffff;
-    font-size: 15px;
-    margin-top: 40px;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px #c4c4c4;
+    font-size: 15px;
 }
 
-.okBtn02:hover {
-    background-color: #e0857f;
+.letterCon03 {
+    width: 308px; height: 656px;
+    background-color: #fff9f4;
+    grid-row: 3/ 4;
+    border-radius: 20px;
 }

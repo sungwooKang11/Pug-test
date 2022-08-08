@@ -5,6 +5,7 @@ body {
     align-items: center;
 }
 
+
 .background04 {
     width: 368px; height: 796px;
     background-color: #FDE7E2;
@@ -63,6 +64,7 @@ body {
     transform: translateX(12px) translateY(-9px) rotate(-45deg);
     width: 20px;
 }
+
 .save04 {
     width: 118px; height: 50px;
     background-color: #DD9292;
@@ -73,9 +75,10 @@ body {
     font-weight: bold;
     border-radius: 15px;
     border: none;
-		box-shadow:2px 2px 2px #c4c4c4;
+	box-shadow:2px 2px 2px #c4c4c4;
     cursor: pointer;
 }
+
 .vaseCon04 {
     width: 228px; height: 600px;
     grid-column: 2/ 3;
@@ -86,9 +89,16 @@ body {
     align-items: center;
     border-radius: 10px;
 }
+
+@font-face {
+    font-family: "Tmoney";
+    src: url("/src/views/fonts/TmoneyRoundWindRegular.ttf");
+}
+
 .who04 {
     color: #5E452A;
     margin-bottom: 20px;
+    font-family: "Tmoney";
 }
 .menu04 {
     width: 300px; height: 796px;

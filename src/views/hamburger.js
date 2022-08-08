@@ -14,11 +14,4 @@ hamburger.onclick= () => {
     high.classList.toggle("active");
     mid.classList.toggle("active");
     low.classList.toggle("active");
-}       
-
-// reset = () => {
-//     hamburger.classList.remove("active");
-//     menu.classList.remove("active");
-// }
-
-// backBtn.addEventListener("click", reset);
+}

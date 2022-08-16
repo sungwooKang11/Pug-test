@@ -1,10 +1,8 @@
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .background04 {
     width: 368px; height: 796px;
@@ -14,7 +12,7 @@ body {
     grid-template-rows: 70px 626px 100px;
     justify-items: center;
     border-radius: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: 0.5s;
 }
 
@@ -128,15 +126,16 @@ body {
     grid-row: 1/ 2;
     border-bottom: 1px solid rgb(229, 229, 229);
 }
-.mFooter04 {
-    width: 280px; height: 80px;
-    grid-row: 11;
+
+.lists04 {
+    width: 280px;
+    grid-row: 3/ 4;
+    grid-column: 1/ 2;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    border-top: 1px solid rgb(229, 229, 229);
+    flex-direction: column;
+    overflow: hidden;
 }
+
 .content04 {
     width: 300px; height: 70px;
     display: flex;
@@ -187,6 +186,7 @@ body {
 #listImg04 {
     width: 28px; height: 28px;
 }
+
 .whoBtn04 {
     width: 28px; height: 28px;
     background-color: #5E452A;
@@ -194,6 +194,17 @@ body {
     margin-right: 20px;
     overflow: hidden;
 }
+
 #questionImg04 {
     width: 28px; height: 28px;
+}
+
+.mFooter04 {
+    width: 280px; height: 80px;
+    grid-row: 11;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgb(229, 229, 229);
 }
